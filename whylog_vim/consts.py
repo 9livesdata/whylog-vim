@@ -1,5 +1,3 @@
-
-
 class EditorStates():
     EDITOR_NORMAL = 'editor normal'
     LOG_READER = 'query'
