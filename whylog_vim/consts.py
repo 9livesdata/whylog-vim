@@ -1,4 +1,4 @@
-class EditorStates():
+class EditorStates(object):
     EDITOR_NORMAL = 'editor normal'
     LOG_READER = 'query'
     TEACHER = 'teacher menu'
@@ -7,6 +7,6 @@ class EditorStates():
     EFFECT_ADDED = 'added effect'
 
 
-class ActionTypes():
+class ActionTypes(object):
     STANDARD = 'standard action'
     TEACHER = 'teacher action'
