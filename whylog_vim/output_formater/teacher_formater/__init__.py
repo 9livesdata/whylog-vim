@@ -26,9 +26,8 @@ class ParserFormater(TeacherProxyUsingFromater):
             ParserOutputs.MESSAGE_CONTENT % (get_parser_name(parser.line_id), parser.line_content)
         )
         output.create_button(
-            partial(self.teacher_proxy.edit_line_content, parser), (
-                FunctionNames.EDIT_LINE_CONTENT, parser.line_id
-            )
+            partial(self.teacher_proxy.edit_line_content, parser),
+            (FunctionNames.EDIT_LINE_CONTENT, parser.line_id)
         )
         output.add(ParserOutputs.META % (parser.line_resource_location, parser.line_offset))
         if not effect:
@@ -41,9 +40,8 @@ class ParserFormater(TeacherProxyUsingFromater):
             # )
             output.add(ParserOutputs.DELETE_BUTTON)
             output.create_button(
-                partial(self.teacher_proxy.delete_parser, parser), (
-                    FunctionNames.DELETE_PARSER, parser.line_id
-                )
+                partial(self.teacher_proxy.delete_parser, parser),
+                (FunctionNames.DELETE_PARSER, parser.line_id)
             )
         output.add('')
 
@@ -51,9 +49,8 @@ class ParserFormater(TeacherProxyUsingFromater):
         output.add(ParserOutputs.REGEX_HEADER % parser.pattern_name)
         output.add(parser.pattern)
         output.create_button(
-            partial(self.teacher_proxy.edit_regex, parser), (
-                FunctionNames.EDIT_REGEX, parser.line_id
-            )
+            partial(self.teacher_proxy.edit_regex, parser),
+            (FunctionNames.EDIT_REGEX, parser.line_id)
         )
         # TODO in later version
         # output.add(ParserOutputs.GUESS_BUTTON)
@@ -73,14 +70,13 @@ class ParserFormater(TeacherProxyUsingFromater):
             log_type = None
         output.add(ParserOutputs.LOG_TYPE % log_type)
         output.create_button(
-            partial(self.teacher_proxy.edit_log_type, parser), (
-                FunctionNames.EDIT_LOG_TYPE, parser.line_id
-            )
+            partial(self.teacher_proxy.edit_log_type, parser),
+            (FunctionNames.EDIT_LOG_TYPE, parser.line_id)
         )
         output.add(ParserOutputs.PRIMARY_KEY % parser.primary_key_groups)
         output.create_button(
-            partial(
-                self.teacher_proxy.edit_primary_key_groups, parser), (FunctionNames.EDIT_PRIMARY_KEY_GROUPS, parser.line_id)
+            partial(self.teacher_proxy.edit_primary_key_groups, parser),
+            (FunctionNames.EDIT_PRIMARY_KEY_GROUPS, parser.line_id)
         )
 
     def _format_converters(self, output, groups, parser):
@@ -90,9 +86,8 @@ class ParserFormater(TeacherProxyUsingFromater):
                 (group, groups[group].converter_type, groups[group].content)
             )
             output.create_button(
-                partial(self.teacher_proxy.edit_converter, parser, group), (
-                    FunctionNames.EDIT_CONVERTER, parser.line_id, group
-                )
+                partial(self.teacher_proxy.edit_converter, parser, group),
+                (FunctionNames.EDIT_CONVERTER, parser.line_id, group)
             )
 
 
@@ -109,15 +104,13 @@ class ConstraintsFormater(TeacherProxyUsingFromater):
     def _format_single(self, output, constraint):
         output.add(ConstraintsOutputs.TYPE % constraint.type)
         output.create_button(
-            partial(self.teacher_proxy.edit_constraint, constraint), (
-                FunctionNames.EDIT_CONSTRAINT, constraint.id_
-            )
+            partial(self.teacher_proxy.edit_constraint, constraint),
+            (FunctionNames.EDIT_CONSTRAINT, constraint.id_)
         )
         output.add(ConstraintsOutputs.DELETE_BUTTON)
         output.create_button(
-            partial(self.teacher_proxy.delete_constraint, constraint), (
-                FunctionNames.DELETE_CONSTRAINT, constraint.id_
-            )
+            partial(self.teacher_proxy.delete_constraint, constraint),
+            (FunctionNames.DELETE_CONSTRAINT, constraint.id_)
         )
         for group in constraint.groups:
             output.add(ConstraintsOutputs.GROUP % (get_parser_name(group[0]), group[1]))
@@ -141,7 +134,10 @@ class TeacherFormater(TeacherProxyUsingFromater):
     def _format_causes(self, output, rule, effect_id):
         for line_id in six.iterkeys(rule.parsers):
             if line_id != effect_id:
-                self.parser.format_parser(output, rule.parsers[line_id], line_id, effect=False,)
+                self.parser.format_parser(output,
+                                          rule.parsers[line_id],
+                                          line_id,
+                                          effect=False,)
 
     def format_rule(self, rule_intent, validation_result):
         output = OutputAggregator()

@@ -7,6 +7,7 @@ from whylog_vim.consts import EditorStates as States, ActionTypes
 from whylog_vim.exceptions import UnknownAction
 from whylog_vim.output_formater.input_windows_messages import InputMessages
 
+
 class WhylogProxy(object):
     def __init__(self, editor):
         self.editor = editor
@@ -120,5 +121,7 @@ class WhylogProxy(object):
         self._state = States.TEACHER_INPUT
 
     def create_new_log_type(self):
-        self.output = InputMessages.get_case_log_types_parser(parser, log_types, partial(self.set_parser_log_type, parser))
+        self.output = InputMessages.get_case_log_types_parser(
+            parser, log_types, partial(self.set_parser_log_type, parser)
+        )
         self.read_function = partial(self.back_after_create_new_log_type, parser)
