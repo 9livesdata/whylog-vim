@@ -7,6 +7,7 @@ class LogReaderProxy(object):
         self.config = config
         self.editor = editor
         self.main_proxy = main_proxy
+        self.output_formater = LogReaderOutput(self.editor)
 
     def new_query(self):
         front_input = self.editor.get_front_input()
@@ -21,7 +22,7 @@ class LogReaderProxy(object):
 
     def handle_action(self):
         if self.editor.is_cursor_at_whylog_windows():
-            self.output.call_button(self.editor.get_current_line())
+            self.output.call_button(self.editor.get_line_number())
         else:
             self.editor.close_query_window()
 

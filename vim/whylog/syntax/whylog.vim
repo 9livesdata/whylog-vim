@@ -41,7 +41,7 @@ syn match prefixes 'group_converter \d\+:'
 syn match prefixes 'group \d\+:'
 syn match prefixes 'match:'
 
-syn match button '\[[^[^[]*\]'
+syn match button '\[[^[^[]*\]$'
 
 syn region descBlock start='===' end='<<<' fold transparent contains=headers,prefixes,params,button,todo
 
