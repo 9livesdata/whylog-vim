@@ -31,13 +31,6 @@ class ParserFormater(TeacherProxyUsingFromater):
         )
         output.add(ParserOutputs.META % (parser.line_resource_location, parser.line_offset))
         if not effect:
-            # TODO in later version
-            # output.add(ParserOutputs.COPY_BUTTON)
-            # output.create_button(
-            #     partial(self.teacher_proxy.copy_parser, parser), (
-            #         FunctionNames.COPY_PARSER, parser.line_id
-            #     )
-            # )
             output.add(ParserOutputs.DELETE_BUTTON)
             output.create_button(
                 partial(self.teacher_proxy.delete_parser, parser),
@@ -52,13 +45,6 @@ class ParserFormater(TeacherProxyUsingFromater):
             partial(self.teacher_proxy.edit_regex, parser),
             (FunctionNames.EDIT_REGEX, parser.line_id)
         )
-        # TODO in later version
-        # output.add(ParserOutputs.GUESS_BUTTON)
-        # output.create_button(
-        #     partial(self.teacher_proxy.guess_regex, parser), (
-        #         FunctionNames.GUESS_REGEX, parser.line_id
-        #     )
-        # )
         output.add('')
         self._format_converters(output, parser.groups, parser)
 
@@ -149,9 +135,6 @@ class TeacherFormater(TeacherProxyUsingFromater):
         output.add(TeacherMenu.BUTTONS_HEADER)
         output.add(TeacherMenu.ABANDON_BUTTON)
         output.create_button(self.teacher_proxy.abandon_rule, FunctionNames.ABANDON_RULE)
-        # TODO in later version
-        # output.add(TeacherMenu.VERIFY_BUTTON)
-        # output.create_button(self.teacher_proxy.verify, FunctionNames.VERIFY)
         output.add(TeacherMenu.RETURN_BUTTON)
         output.create_button(self.teacher_proxy.return_to_file, FunctionNames.RETURN_TO_FILE)
         output.add(TeacherMenu.SAVE_BUTTON)

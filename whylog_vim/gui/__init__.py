@@ -53,7 +53,6 @@ class VimEditor(object):
 
     def get_line_source(self):
         filename = self.get_current_filename()
-        # TODO add proper host
         host = 'localhost'
         return LineSource(host, filename)
 
