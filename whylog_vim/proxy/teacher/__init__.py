@@ -19,6 +19,12 @@ from whylog_vim.proxy.teacher.exceptions import CannotGoToPosition
 
 
 class TeacherProxy(MenuHandler):
+    """
+    This class is responsible for pack messages from vim to
+    Teacher from whylog. This class inherit from MenuHandler
+    which provides functions for actions for the menu of the
+    Teacher.
+    """
     def __init__(self, teacher, config, editor, main_proxy):
         self.teacher = teacher
         self.config = config
@@ -34,6 +40,9 @@ class TeacherProxy(MenuHandler):
         self.teacher.set_log_type(id, self.main_proxy.log_types[front_input.line_source].name)
 
     def new_lesson(self):
+    """
+    This function will be call to create new lesson to Teacher..
+    """
         front_input = self.editor.get_front_input()
         self._add_line(front_input, effect=True)
         self.origin_file_name = self.editor.get_current_filename()
