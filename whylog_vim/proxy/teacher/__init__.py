@@ -40,9 +40,9 @@ class TeacherProxy(MenuHandler):
         self.teacher.set_log_type(id, self.main_proxy.log_types[front_input.line_source].name)
 
     def new_lesson(self):
-    """
-    This function will be call to create new lesson to Teacher..
-    """
+        """
+        This function will be call to create new lesson to Teacher..
+        """
         front_input = self.editor.get_front_input()
         self._add_line(front_input, effect=True)
         self.origin_file_name = self.editor.get_current_filename()
