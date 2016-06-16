@@ -4,6 +4,9 @@ from whylog_vim.output_formater.output_aggregator import OutputAggregator
 
 
 class LogReaderOutput(object):
+    """
+    This class is responsible for formatinng output of the logreaders query.
+    """
     def __init__(self, editor):
         self.editor = editor
 

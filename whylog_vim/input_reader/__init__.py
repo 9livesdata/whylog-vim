@@ -5,6 +5,10 @@ from whylog_vim.utils import get_id_from_name
 
 
 class InputReader(object):
+    """
+    This class is responsible for sharing functions for filtering input
+    from input windows.
+    """
     @classmethod
     def filter_comments(cls, content):
         return [line for line in content if not RegexPatterns.COMMENTS.match(line)]
@@ -22,6 +26,11 @@ class InputReader(object):
 
 
 class ConstraintReader(object):
+    """
+    This class shares create_constraint function which parse constraint
+    from the text in specific format and creates the constraint from
+    ConstraintRegistry class which is factory for constraints in whylog.
+    """
     @classmethod
     def _parse_constraint(cls, lines):
         constr_type = ConstraintInput.TYPE.match(lines[0]).group(1)

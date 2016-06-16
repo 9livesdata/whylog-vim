@@ -8,6 +8,11 @@ from whylog_vim.gui.files_manager import FilesManager
 
 
 class VimEditor(object):
+    """
+    This class is responsible for calling Vim functions for rest of
+    the module. It also is responsible for managing files and windows
+    for what uses classes FilesManager and WindoWhylogManager.
+    """
     def __init__(self):
         self.window_manager = WhylogWindowManager()
 

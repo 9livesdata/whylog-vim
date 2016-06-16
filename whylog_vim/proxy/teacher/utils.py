@@ -9,6 +9,14 @@ from whylog_vim.consts import EditorStates
 
 
 class MenuHandler(object):
+    """
+    This class is for sharing funciton on the output of Teachers menu.
+    The methods of this class are the actions of the menu.
+    Some of the actions functions creates the new window for asking user
+    for data to create rule. These of the functions sets attribute
+    called read_function which is callback function after sets input
+    or case window.
+    """
     def edit_line_content(self, parser):
         output = InputMessages.get_edit_line_message(parser.line_content)
         is_effect = self.rule.effect_id == parser.line_id

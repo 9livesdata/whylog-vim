@@ -9,6 +9,16 @@ from whylog_vim.output_formater.input_windows_messages import InputMessages
 
 
 class WhylogProxy(object):
+    """
+    This class provides action and teach which will be called
+    in vim editor. WhylogProxy is responsible for handling
+    actions from editor to whylog meanwhile VimEditor class in
+    gui module is responsible for communication from whylog to editor.
+
+    WhylogProxy uses two classes TeacherProxy and LogReaderProxy
+    which are responsible for handling teaching and geting query
+    processes.
+    """
     def __init__(self, editor):
         self.editor = editor
         log_reader, teacher_generator, config = whylog_factory()
@@ -86,9 +96,18 @@ class WhylogProxy(object):
         return self._state
 
     def action(self):
+        """
+        This function will be called by editor after presix
+        whylog_action button which is set by default on <F3>.
+        """
         self._handle_action(ActionTypes.STANDARD)
 
+
     def teach(self):
+        """
+        This function will be called by editor after presix
+        whylog_teach button which is set by default on <F4>.
+        """
         self._handle_action(ActionTypes.TEACHER)
 
     def _update_normal_state(self):

@@ -2,6 +2,12 @@ import vim
 
 
 class VimUIWrapper(object):
+    """
+    This function is wrapper for vim functions.
+    This is the only one class which uses the python-vim module.
+    All actions which takes on whylog-vim which takes places on the vim
+    eidtor is using this class.
+    """
     @classmethod
     def resize(cls, size):
         vim.command('resize %s' % size)

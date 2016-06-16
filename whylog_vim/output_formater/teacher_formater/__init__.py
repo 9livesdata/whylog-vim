@@ -8,11 +8,19 @@ from whylog_vim.utils import get_parser_name
 
 
 class TeacherProxyUsingFromater(object):
+    """
+    This is abstract class which shares the constructor for the
+    formatting subclasses.
+    """
     def __init__(self, teacher_proxy):
         self.teacher_proxy = teacher_proxy
 
 
 class ParserFormater(TeacherProxyUsingFromater):
+    """
+    This class is responsible for creating parsers on the Teachers menu.
+    It uses for this format_parser function.
+    """
     def format_parser(self, output, parser, parser_id, effect=True):
         parser.line_id = parser_id
         self._format_line_info(output, parser, effect)
@@ -78,6 +86,10 @@ class ParserFormater(TeacherProxyUsingFromater):
 
 
 class ConstraintsFormater(TeacherProxyUsingFromater):
+    """
+    This class is responsible for creating constraints part of the
+    Teacher Menu.
+    """
     def format_constraints(self, output, constraints):
         output.add(ConstraintsOutputs.HEADER)
         output.add(ConstraintsOutputs.ADD_BUTTON)
@@ -112,6 +124,11 @@ class ConstraintsFormater(TeacherProxyUsingFromater):
 
 
 class TeacherFormater(TeacherProxyUsingFromater):
+    """
+    This class is responsible for creating whole teacher menu.
+    It uses ConstarintsFormater and ParserFormater for create
+    part of the menu. It also adds the buttons for the manu.
+    """
     def __init__(self, teacher_proxy):
         self.parser = ParserFormater(teacher_proxy)
         self.constraint = ConstraintsFormater(teacher_proxy)

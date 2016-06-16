@@ -2,6 +2,9 @@ from whylog_vim.gui.vim_ui_wrapper import VimUIWrapper
 
 
 class FilesManager(object):
+    """
+    This class is responsible for managing files in vim editor.
+    """
     @classmethod
     def get_files_window_id(cls, file_name):
         """

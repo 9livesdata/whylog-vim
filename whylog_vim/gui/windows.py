@@ -19,6 +19,9 @@ class WindowContext(object):
 
 
 class Window(object):
+    """
+    This class is responsible for managing vim whylog window.
+    """
     def __init__(self, name, content, modifiable=False, splited_window_size=None):
         assert content
         self.context = WindowContext(modifiable)
@@ -65,6 +68,10 @@ def catch_key_error(function):
 
 
 class WhylogWindowManager(object):
+    """
+    This class is manager for communication between VimEditor and windows.
+    It provides that there can be the only one whylog windows at the same time.
+    """
     def __init__(self):
         self.windows = dict()
 

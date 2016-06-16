@@ -20,10 +20,12 @@ from whylog_vim.proxy.teacher.exceptions import CannotGoToPosition
 
 class TeacherProxy(MenuHandler):
     """
-    This class is responsible for pack messages from vim to
-    Teacher from whylog. This class inherit from MenuHandler
+    This class is responsible give messages from vim to
+    Teacher in whylog module. This class inherit from MenuHandler
     which provides functions for actions for the menu of the
     Teacher.
+    TeacherProxy asks Teacher for rule intent and uses it for
+    creating for users menu.
     """
     def __init__(self, teacher, config, editor, main_proxy):
         self.teacher = teacher
@@ -41,7 +43,7 @@ class TeacherProxy(MenuHandler):
 
     def new_lesson(self):
         """
-        This function will be call to create new lesson to Teacher..
+        This function will be call to create new lesson to Teacher.
         """
         front_input = self.editor.get_front_input()
         self._add_line(front_input, effect=True)
@@ -49,25 +51,41 @@ class TeacherProxy(MenuHandler):
         six.print_(Messages.ADDED_EFFECT)
 
     def add_cause(self):
+        """
+        This function will be called when user is in logs file after
+        adding effect and wants to add both first or other cause.
+        """
         front_input = self.editor.get_front_input()
         self._add_line(front_input)
         self.print_teacher()
 
     def handle_menu_signal(self):
+        """
+        This function is called when user takes the action on Teachers menu.
+        """
         self._set_cursor_position()
         self.output.call_button(self.editor.get_line_number())
         if self.main_proxy.get_state() == EditorStates.TEACHER:
             self._return_cursor_to_position()
 
     def read_input(self):
+        """
+        This function is called when Input or Case window are opened.
+        Its read the input of the window by setted before as an attibute
+        function called read_funciton.
+        """
         if self.read_function():
             self.print_teacher()
             self._return_cursor_to_position()
 
     def print_teacher(self):
+        """
+        This function asks teacher for the rule intent and uses it for
+        create new teacher window with formatted rule intent as an
+        content
+        """
         self.rule = self.teacher.get_rule()
         self.output = self.formater.format_rule(self.rule, None)
-        # here should be the result from validate method of Teacher
         self.editor.create_teacher_window(self.output.get_content())
         self.editor.set_syntax_folding()
         self.main_proxy.set_state(EditorStates.TEACHER)

@@ -11,6 +11,11 @@ from whylog_vim.output_formater.utils import convert_to_buttons_list
 
 
 class InputMessages(object):
+    """
+    This class provides classmethods for formatinng output for
+    input and case window types. Most of these methods has
+    simple interfaces for using.
+    """
     TYPE_TO_MESSAGE = {
         WindowTypes.INPUT: Messages.INPUT_INFO,
         WindowTypes.CASE: Messages.CASE_INFO,
