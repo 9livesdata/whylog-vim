@@ -1,0 +1,30 @@
+whylog_vim.tests.tests_output_formater package
+==============================================
+
+Submodules
+----------
+
+whylog_vim.tests.tests_output_formater.tests_output_agregator module
+--------------------------------------------------------------------
+
+.. automodule:: whylog_vim.tests.tests_output_formater.tests_output_agregator
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.tests.tests_output_formater.tests_utils module
+---------------------------------------------------------
+
+.. automodule:: whylog_vim.tests.tests_output_formater.tests_utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim.tests.tests_output_formater
+    :members:
+    :undoc-members:
+    :show-inheritance:

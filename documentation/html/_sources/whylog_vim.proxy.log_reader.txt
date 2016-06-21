@@ -1,0 +1,10 @@
+whylog_vim.proxy.log_reader package
+===================================
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim.proxy.log_reader
+    :members:
+    :undoc-members:
+    :show-inheritance:

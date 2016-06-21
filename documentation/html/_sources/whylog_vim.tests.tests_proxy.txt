@@ -1,0 +1,38 @@
+whylog_vim.tests.tests_proxy package
+====================================
+
+Submodules
+----------
+
+whylog_vim.tests.tests_proxy.tests_parser_menu_operations module
+----------------------------------------------------------------
+
+.. automodule:: whylog_vim.tests.tests_proxy.tests_parser_menu_operations
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.tests.tests_proxy.tests_unit_proxy_main module
+---------------------------------------------------------
+
+.. automodule:: whylog_vim.tests.tests_proxy.tests_unit_proxy_main
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.tests.tests_proxy.utils module
+-----------------------------------------
+
+.. automodule:: whylog_vim.tests.tests_proxy.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim.tests.tests_proxy
+    :members:
+    :undoc-members:
+    :show-inheritance:

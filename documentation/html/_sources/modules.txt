@@ -1,0 +1,7 @@
+whylog_vim
+==========
+
+.. toctree::
+   :maxdepth: 4
+
+   whylog_vim

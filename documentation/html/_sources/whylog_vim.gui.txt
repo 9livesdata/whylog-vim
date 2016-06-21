@@ -1,0 +1,46 @@
+whylog_vim.gui package
+======================
+
+Submodules
+----------
+
+whylog_vim.gui.exceptions module
+--------------------------------
+
+.. automodule:: whylog_vim.gui.exceptions
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.gui.files_manager module
+-----------------------------------
+
+.. automodule:: whylog_vim.gui.files_manager
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.gui.vim_ui_wrapper module
+------------------------------------
+
+.. automodule:: whylog_vim.gui.vim_ui_wrapper
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.gui.windows module
+-----------------------------
+
+.. automodule:: whylog_vim.gui.windows
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim.gui
+    :members:
+    :undoc-members:
+    :show-inheritance:

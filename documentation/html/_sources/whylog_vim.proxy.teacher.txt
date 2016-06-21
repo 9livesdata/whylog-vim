@@ -1,0 +1,30 @@
+whylog_vim.proxy.teacher package
+================================
+
+Submodules
+----------
+
+whylog_vim.proxy.teacher.exceptions module
+------------------------------------------
+
+.. automodule:: whylog_vim.proxy.teacher.exceptions
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.proxy.teacher.utils module
+-------------------------------------
+
+.. automodule:: whylog_vim.proxy.teacher.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim.proxy.teacher
+    :members:
+    :undoc-members:
+    :show-inheritance:

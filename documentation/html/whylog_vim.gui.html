@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>whylog_vim.gui package &mdash; Whylog-vim 1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Whylog-vim 1 documentation" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Whylog-vim 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="whylog-vim-gui-package">
+<h1>whylog_vim.gui package<a class="headerlink" href="#whylog-vim-gui-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-whylog_vim.gui.exceptions">
+<span id="whylog-vim-gui-exceptions-module"></span><h2>whylog_vim.gui.exceptions module<a class="headerlink" href="#module-whylog_vim.gui.exceptions" title="Permalink to this headline">¶</a></h2>
+<dl class="exception">
+<dt id="whylog_vim.gui.exceptions.CannotCloseWindow">
+<em class="property">exception </em><code class="descclassname">whylog_vim.gui.exceptions.</code><code class="descname">CannotCloseWindow</code><span class="sig-paren">(</span><em>window_type</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.exceptions.CannotCloseWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#whylog_vim.gui.exceptions.WindowException" title="whylog_vim.gui.exceptions.WindowException"><code class="xref py py-class docutils literal"><span class="pre">whylog_vim.gui.exceptions.WindowException</span></code></a></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="whylog_vim.gui.exceptions.CannotFindWindowId">
+<em class="property">exception </em><code class="descclassname">whylog_vim.gui.exceptions.</code><code class="descname">CannotFindWindowId</code><span class="sig-paren">(</span><em>window_type</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.exceptions.CannotFindWindowId" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#whylog_vim.gui.exceptions.WindowException" title="whylog_vim.gui.exceptions.WindowException"><code class="xref py py-class docutils literal"><span class="pre">whylog_vim.gui.exceptions.WindowException</span></code></a></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="whylog_vim.gui.exceptions.CannotGetWindowContent">
+<em class="property">exception </em><code class="descclassname">whylog_vim.gui.exceptions.</code><code class="descname">CannotGetWindowContent</code><span class="sig-paren">(</span><em>window_type</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.exceptions.CannotGetWindowContent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#whylog_vim.gui.exceptions.WindowException" title="whylog_vim.gui.exceptions.WindowException"><code class="xref py py-class docutils literal"><span class="pre">whylog_vim.gui.exceptions.WindowException</span></code></a></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="whylog_vim.gui.exceptions.CannotSetWindowContent">
+<em class="property">exception </em><code class="descclassname">whylog_vim.gui.exceptions.</code><code class="descname">CannotSetWindowContent</code><span class="sig-paren">(</span><em>window_type</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.exceptions.CannotSetWindowContent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#whylog_vim.gui.exceptions.WindowException" title="whylog_vim.gui.exceptions.WindowException"><code class="xref py py-class docutils literal"><span class="pre">whylog_vim.gui.exceptions.WindowException</span></code></a></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="whylog_vim.gui.exceptions.CannotSwitchToWindow">
+<em class="property">exception </em><code class="descclassname">whylog_vim.gui.exceptions.</code><code class="descname">CannotSwitchToWindow</code><span class="sig-paren">(</span><em>window_type</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.exceptions.CannotSwitchToWindow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#whylog_vim.gui.exceptions.WindowException" title="whylog_vim.gui.exceptions.WindowException"><code class="xref py py-class docutils literal"><span class="pre">whylog_vim.gui.exceptions.WindowException</span></code></a></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="whylog_vim.gui.exceptions.WindowException">
+<em class="property">exception </em><code class="descclassname">whylog_vim.gui.exceptions.</code><code class="descname">WindowException</code><span class="sig-paren">(</span><em>window_type</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.exceptions.WindowException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="whylog_vim.html#whylog_vim.exceptions.WhylogVimException" title="whylog_vim.exceptions.WhylogVimException"><code class="xref py py-class docutils literal"><span class="pre">whylog_vim.exceptions.WhylogVimException</span></code></a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim.gui.files_manager">
+<span id="whylog-vim-gui-files-manager-module"></span><h2>whylog_vim.gui.files_manager module<a class="headerlink" href="#module-whylog_vim.gui.files_manager" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whylog_vim.gui.files_manager.FilesManager">
+<em class="property">class </em><code class="descclassname">whylog_vim.gui.files_manager.</code><code class="descname">FilesManager</code><a class="headerlink" href="#whylog_vim.gui.files_manager.FilesManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="classmethod">
+<dt id="whylog_vim.gui.files_manager.FilesManager.get_files_window_id">
+<em class="property">classmethod </em><code class="descname">get_files_window_id</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.files_manager.FilesManager.get_files_window_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function returns the id of the window named as given filename.
+It will works fine if in whole gui module this value will be
+neither returned outside nor agregated.
+That is because we want to avoid situation when between set window id and move
+to window using this id something can change in vim.windows
+(for example user press :q in vim and close one of the window)
+and meaning of the id will change.</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.files_manager.FilesManager.go_to_file">
+<em class="property">classmethod </em><code class="descname">go_to_file</code><span class="sig-paren">(</span><em>file_name</em>, <em>offset=1</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.files_manager.FilesManager.go_to_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.files_manager.FilesManager.is_file_open">
+<em class="property">classmethod </em><code class="descname">is_file_open</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.files_manager.FilesManager.is_file_open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim.gui.vim_ui_wrapper">
+<span id="whylog-vim-gui-vim-ui-wrapper-module"></span><h2>whylog_vim.gui.vim_ui_wrapper module<a class="headerlink" href="#module-whylog_vim.gui.vim_ui_wrapper" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper">
+<em class="property">class </em><code class="descclassname">whylog_vim.gui.vim_ui_wrapper.</code><code class="descname">VimUIWrapper</code><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.close_current_window">
+<em class="property">classmethod </em><code class="descname">close_current_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.close_current_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_buffer">
+<em class="property">classmethod </em><code class="descname">get_buffer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_buffer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_column">
+<em class="property">classmethod </em><code class="descname">get_column</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_column" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_current_filename">
+<em class="property">classmethod </em><code class="descname">get_current_filename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_current_filename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_current_line">
+<em class="property">classmethod </em><code class="descname">get_current_line</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_current_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_current_window_id">
+<em class="property">classmethod </em><code class="descname">get_current_window_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_current_window_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_cursor_offset">
+<em class="property">classmethod </em><code class="descname">get_cursor_offset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_cursor_offset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_line_number">
+<em class="property">classmethod </em><code class="descname">get_line_number</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_line_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_line_offset">
+<em class="property">classmethod </em><code class="descname">get_line_offset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_line_offset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_windows">
+<em class="property">classmethod </em><code class="descname">get_windows</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.get_windows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.go_to_offset">
+<em class="property">classmethod </em><code class="descname">go_to_offset</code><span class="sig-paren">(</span><em>byte_offset</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.go_to_offset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.go_to_window">
+<em class="property">classmethod </em><code class="descname">go_to_window</code><span class="sig-paren">(</span><em>window_id</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.go_to_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.normal">
+<em class="property">classmethod </em><code class="descname">normal</code><span class="sig-paren">(</span><em>command</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.normal" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.open_file_at_window">
+<em class="property">classmethod </em><code class="descname">open_file_at_window</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.open_file_at_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.resize">
+<em class="property">classmethod </em><code class="descname">resize</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.resize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.set_file_type">
+<em class="property">classmethod </em><code class="descname">set_file_type</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.set_file_type" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.set_modifiable">
+<em class="property">classmethod </em><code class="descname">set_modifiable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.set_modifiable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.set_nomodifible">
+<em class="property">classmethod </em><code class="descname">set_nomodifible</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.set_nomodifible" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.set_nowritable">
+<em class="property">classmethod </em><code class="descname">set_nowritable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.set_nowritable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.set_syntax_folding">
+<em class="property">classmethod </em><code class="descname">set_syntax_folding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.set_syntax_folding" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.split_window">
+<em class="property">classmethod </em><code class="descname">split_window</code><span class="sig-paren">(</span><em>name=''</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.vim_ui_wrapper.VimUIWrapper.split_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim.gui.windows">
+<span id="whylog-vim-gui-windows-module"></span><h2>whylog_vim.gui.windows module<a class="headerlink" href="#module-whylog_vim.gui.windows" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whylog_vim.gui.windows.WhylogWindowManager">
+<em class="property">class </em><code class="descclassname">whylog_vim.gui.windows.</code><code class="descname">WhylogWindowManager</code><a class="headerlink" href="#whylog_vim.gui.windows.WhylogWindowManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="whylog_vim.gui.windows.WhylogWindowManager.are_windows_closed">
+<code class="descname">are_windows_closed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.WhylogWindowManager.are_windows_closed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.windows.WhylogWindowManager.close_window">
+<code class="descname">close_window</code><span class="sig-paren">(</span><em>window_type</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.WhylogWindowManager.close_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.windows.WhylogWindowManager.create_window">
+<code class="descname">create_window</code><span class="sig-paren">(</span><em>window_type</em>, <em>content</em>, <em>modifiable=False</em>, <em>size=None</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.WhylogWindowManager.create_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.windows.WhylogWindowManager.get_window_content">
+<code class="descname">get_window_content</code><span class="sig-paren">(</span><em>window_type</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.WhylogWindowManager.get_window_content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.windows.WhylogWindowManager.get_window_id">
+<code class="descname">get_window_id</code><span class="sig-paren">(</span><em>window_type</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.WhylogWindowManager.get_window_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.windows.WhylogWindowManager.get_windows_ids">
+<code class="descname">get_windows_ids</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.WhylogWindowManager.get_windows_ids" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.windows.WhylogWindowManager.go_to_window">
+<code class="descname">go_to_window</code><span class="sig-paren">(</span><em>window_type</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.WhylogWindowManager.go_to_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.windows.WhylogWindowManager.set_content">
+<code class="descname">set_content</code><span class="sig-paren">(</span><em>window_type</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.WhylogWindowManager.set_content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.gui.windows.Window">
+<em class="property">class </em><code class="descclassname">whylog_vim.gui.windows.</code><code class="descname">Window</code><span class="sig-paren">(</span><em>name</em>, <em>content</em>, <em>modifiable=False</em>, <em>splited_window_size=None</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.Window" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="whylog_vim.gui.windows.Window.get_content">
+<code class="descname">get_content</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.Window.get_content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.windows.Window.get_window_id">
+<code class="descname">get_window_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.Window.get_window_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.windows.Window.set_content">
+<code class="descname">set_content</code><span class="sig-paren">(</span><em>contents</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.Window.set_content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.windows.Window.set_modifiable">
+<code class="descname">set_modifiable</code><span class="sig-paren">(</span><em>modifiable</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.Window.set_modifiable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.gui.windows.WindowContext">
+<em class="property">class </em><code class="descclassname">whylog_vim.gui.windows.</code><code class="descname">WindowContext</code><span class="sig-paren">(</span><em>modifiable</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.WindowContext" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="whylog_vim.gui.windows.catch_key_error">
+<code class="descclassname">whylog_vim.gui.windows.</code><code class="descname">catch_key_error</code><span class="sig-paren">(</span><em>function</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.windows.catch_key_error" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim.gui">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-whylog_vim.gui" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whylog_vim.gui.VimEditor">
+<em class="property">class </em><code class="descclassname">whylog_vim.gui.</code><code class="descname">VimEditor</code><a class="headerlink" href="#whylog_vim.gui.VimEditor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.close_query_window">
+<code class="descname">close_query_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.close_query_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.close_teacher_window">
+<code class="descname">close_teacher_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.close_teacher_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.close_window">
+<code class="descname">close_window</code><span class="sig-paren">(</span><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.close_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.create_case_window">
+<code class="descname">create_case_window</code><span class="sig-paren">(</span><em>default_input=None</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.create_case_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.create_input_window">
+<code class="descname">create_input_window</code><span class="sig-paren">(</span><em>default_input=None</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.create_input_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.create_query_window">
+<code class="descname">create_query_window</code><span class="sig-paren">(</span><em>default_input=None</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.create_query_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.create_teacher_window">
+<code class="descname">create_teacher_window</code><span class="sig-paren">(</span><em>default_input=None</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.create_teacher_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.get_button_name">
+<code class="descname">get_button_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.get_button_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.get_current_filename">
+<code class="descname">get_current_filename</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.get_current_filename" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.get_current_line">
+<code class="descname">get_current_line</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.get_current_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.get_front_input">
+<code class="descname">get_front_input</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.get_front_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method returns Front Input object of the line where cursor is.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.get_input_content">
+<code class="descname">get_input_content</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.get_input_content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.get_line_number">
+<code class="descname">get_line_number</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.get_line_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.get_line_offset">
+<code class="descname">get_line_offset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.get_line_offset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.get_line_source">
+<code class="descname">get_line_source</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.get_line_source" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.go_to_file">
+<code class="descname">go_to_file</code><span class="sig-paren">(</span><em>filename</em>, <em>offset=1</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.go_to_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.go_to_offset">
+<code class="descname">go_to_offset</code><span class="sig-paren">(</span><em>byte_offset</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.go_to_offset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.go_to_query_window">
+<code class="descname">go_to_query_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.go_to_query_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.is_any_whylog_window_open">
+<code class="descname">is_any_whylog_window_open</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.is_any_whylog_window_open" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.is_cursor_at_case_window">
+<code class="descname">is_cursor_at_case_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.is_cursor_at_case_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.is_cursor_at_input_window">
+<code class="descname">is_cursor_at_input_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.is_cursor_at_input_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.is_cursor_at_teacher_window">
+<code class="descname">is_cursor_at_teacher_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.is_cursor_at_teacher_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.is_cursor_at_whylog_windows">
+<code class="descname">is_cursor_at_whylog_windows</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.is_cursor_at_whylog_windows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.open_fold">
+<code class="descname">open_fold</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.open_fold" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.set_query_output">
+<code class="descname">set_query_output</code><span class="sig-paren">(</span><em>content</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.set_query_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.set_syntax_folding">
+<code class="descname">set_syntax_folding</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.set_syntax_folding" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.gui.VimEditor.set_teacher_output">
+<code class="descname">set_teacher_output</code><span class="sig-paren">(</span><em>content</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.gui.VimEditor.set_teacher_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">whylog_vim.gui package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.gui.exceptions">whylog_vim.gui.exceptions module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.gui.files_manager">whylog_vim.gui.files_manager module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.gui.vim_ui_wrapper">whylog_vim.gui.vim_ui_wrapper module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.gui.windows">whylog_vim.gui.windows module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.gui">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/whylog_vim.gui.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Ewa Pawłowska, Andrzej Górski, Krzysztof Gromadzki, Grzegorz Konefał.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.3</a>
+      
+      |
+      <a href="_sources/whylog_vim.gui.txt"
+          rel="nofollow">Page source</a></li>
+    </div>
+
+    
+
+    
+  </body>
+</html>

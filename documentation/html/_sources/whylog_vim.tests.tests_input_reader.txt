@@ -1,0 +1,22 @@
+whylog_vim.tests.tests_input_reader package
+===========================================
+
+Submodules
+----------
+
+whylog_vim.tests.tests_input_reader.tests_units module
+------------------------------------------------------
+
+.. automodule:: whylog_vim.tests.tests_input_reader.tests_units
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim.tests.tests_input_reader
+    :members:
+    :undoc-members:
+    :show-inheritance:

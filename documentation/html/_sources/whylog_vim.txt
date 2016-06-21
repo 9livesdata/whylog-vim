@@ -1,0 +1,49 @@
+whylog_vim package
+==================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    whylog_vim.gui
+    whylog_vim.input_reader
+    whylog_vim.output_formater
+    whylog_vim.proxy
+    whylog_vim.tests
+
+Submodules
+----------
+
+whylog_vim.consts module
+------------------------
+
+.. automodule:: whylog_vim.consts
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.exceptions module
+----------------------------
+
+.. automodule:: whylog_vim.exceptions
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.utils module
+-----------------------
+
+.. automodule:: whylog_vim.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim
+    :members:
+    :undoc-members:
+    :show-inheritance:

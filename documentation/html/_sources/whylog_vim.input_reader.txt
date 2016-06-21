@@ -1,0 +1,30 @@
+whylog_vim.input_reader package
+===============================
+
+Submodules
+----------
+
+whylog_vim.input_reader.consts module
+-------------------------------------
+
+.. automodule:: whylog_vim.input_reader.consts
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.input_reader.teacher_reader module
+---------------------------------------------
+
+.. automodule:: whylog_vim.input_reader.teacher_reader
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim.input_reader
+    :members:
+    :undoc-members:
+    :show-inheritance:

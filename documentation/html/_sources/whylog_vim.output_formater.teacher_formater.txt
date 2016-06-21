@@ -1,0 +1,10 @@
+whylog_vim.output_formater.teacher_formater package
+===================================================
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim.output_formater.teacher_formater
+    :members:
+    :undoc-members:
+    :show-inheritance:

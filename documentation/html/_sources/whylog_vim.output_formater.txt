@@ -1,0 +1,61 @@
+whylog_vim.output_formater package
+==================================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    whylog_vim.output_formater.teacher_formater
+
+Submodules
+----------
+
+whylog_vim.output_formater.consts module
+----------------------------------------
+
+.. automodule:: whylog_vim.output_formater.consts
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.output_formater.input_windows_messages module
+--------------------------------------------------------
+
+.. automodule:: whylog_vim.output_formater.input_windows_messages
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.output_formater.log_reader_formater module
+-----------------------------------------------------
+
+.. automodule:: whylog_vim.output_formater.log_reader_formater
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.output_formater.output_aggregator module
+---------------------------------------------------
+
+.. automodule:: whylog_vim.output_formater.output_aggregator
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+whylog_vim.output_formater.utils module
+---------------------------------------
+
+.. automodule:: whylog_vim.output_formater.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim.output_formater
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>whylog_vim.output_formater package &mdash; Whylog-vim 1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Whylog-vim 1 documentation" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Whylog-vim 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="whylog-vim-output-formater-package">
+<h1>whylog_vim.output_formater package<a class="headerlink" href="#whylog-vim-output-formater-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="whylog_vim.output_formater.teacher_formater.html">whylog_vim.output_formater.teacher_formater package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.output_formater.teacher_formater.html#module-whylog_vim.output_formater.teacher_formater">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-whylog_vim.output_formater.consts">
+<span id="whylog-vim-output-formater-consts-module"></span><h2>whylog_vim.output_formater.consts module<a class="headerlink" href="#module-whylog_vim.output_formater.consts" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whylog_vim.output_formater.consts.LogReader">
+<em class="property">class </em><code class="descclassname">whylog_vim.output_formater.consts.</code><code class="descname">LogReader</code><a class="headerlink" href="#whylog_vim.output_formater.consts.LogReader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.LogReader.CONSTRAINT_LINKAGE">
+<code class="descname">CONSTRAINT_LINKAGE</code><em class="property"> = '--- constraints due to %s'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.LogReader.CONSTRAINT_LINKAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.LogReader.EMPTY_OUTPUT">
+<code class="descname">EMPTY_OUTPUT</code><em class="property"> = 'There is no cause of this line in config.'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.LogReader.EMPTY_OUTPUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.LogReader.EMPTY_OUTPUT_CONTINUE">
+<code class="descname">EMPTY_OUTPUT_CONTINUE</code><em class="property"> = 'To add new rules press WhylogTeach (&lt;F4&gt; by default).'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.LogReader.EMPTY_OUTPUT_CONTINUE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.LogReader.ITEM">
+<code class="descname">ITEM</code><em class="property"> = 'investigation item'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.LogReader.ITEM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.LogReader.LINE_HEADER">
+<code class="descname">LINE_HEADER</code><em class="property"> = '--- %s [%s offset %s]:'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.LogReader.LINE_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.LogReader.RESULT_HEADER">
+<code class="descname">RESULT_HEADER</code><em class="property"> = '=== Investigation Result %s'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.LogReader.RESULT_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.output_formater.consts.TeacherMenu">
+<em class="property">class </em><code class="descclassname">whylog_vim.output_formater.consts.</code><code class="descname">TeacherMenu</code><a class="headerlink" href="#whylog_vim.output_formater.consts.TeacherMenu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.TeacherMenu.ABANDON_BUTTON">
+<code class="descname">ABANDON_BUTTON</code><em class="property"> = '[abandon_rule]'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.TeacherMenu.ABANDON_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.TeacherMenu.BUTTONS_HEADER">
+<code class="descname">BUTTONS_HEADER</code><em class="property"> = '--- Buttons:'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.TeacherMenu.BUTTONS_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.TeacherMenu.END_BRACKET">
+<code class="descname">END_BRACKET</code><em class="property"> = '&lt;&lt;&lt;'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.TeacherMenu.END_BRACKET" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.TeacherMenu.RETURN_BUTTON">
+<code class="descname">RETURN_BUTTON</code><em class="property"> = '[return_to_file]'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.TeacherMenu.RETURN_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.TeacherMenu.SAVE_BUTTON">
+<code class="descname">SAVE_BUTTON</code><em class="property"> = '[save]'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.TeacherMenu.SAVE_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.consts.TeacherMenu.VERIFY_BUTTON">
+<code class="descname">VERIFY_BUTTON</code><em class="property"> = '[verify_rule]'</em><a class="headerlink" href="#whylog_vim.output_formater.consts.TeacherMenu.VERIFY_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim.output_formater.input_windows_messages">
+<span id="whylog-vim-output-formater-input-windows-messages-module"></span><h2>whylog_vim.output_formater.input_windows_messages module<a class="headerlink" href="#module-whylog_vim.output_formater.input_windows_messages" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whylog_vim.output_formater.input_windows_messages.InputMessages">
+<em class="property">class </em><code class="descclassname">whylog_vim.output_formater.input_windows_messages.</code><code class="descname">InputMessages</code><a class="headerlink" href="#whylog_vim.output_formater.input_windows_messages.InputMessages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.output_formater.input_windows_messages.InputMessages.TYPE_TO_MESSAGE">
+<code class="descname">TYPE_TO_MESSAGE</code><em class="property"> = {'whylog_case': 'Select an option and press &lt;F3&gt;', 'whylog_teacher': 'Select an option and press &lt;F3&gt;', 'whylog_input': 'Enter the content below the commented block and press &lt;F3&gt;.'}</em><a class="headerlink" href="#whylog_vim.output_formater.input_windows_messages.InputMessages.TYPE_TO_MESSAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.output_formater.input_windows_messages.InputMessages.get_constraint_message">
+<em class="property">classmethod </em><code class="descname">get_constraint_message</code><span class="sig-paren">(</span><em>parsers</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.input_windows_messages.InputMessages.get_constraint_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.output_formater.input_windows_messages.InputMessages.get_edit_line_message">
+<em class="property">classmethod </em><code class="descname">get_edit_line_message</code><span class="sig-paren">(</span><em>old_content</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.input_windows_messages.InputMessages.get_edit_line_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.output_formater.input_windows_messages.InputMessages.get_edit_regex_message">
+<em class="property">classmethod </em><code class="descname">get_edit_regex_message</code><span class="sig-paren">(</span><em>line_content</em>, <em>old_regex</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.input_windows_messages.InputMessages.get_edit_regex_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.output_formater.input_windows_messages.InputMessages.get_log_types_message">
+<em class="property">classmethod </em><code class="descname">get_log_types_message</code><span class="sig-paren">(</span><em>parser</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.input_windows_messages.InputMessages.get_log_types_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.output_formater.input_windows_messages.InputMessages.get_main_set_log_type_message">
+<em class="property">classmethod </em><code class="descname">get_main_set_log_type_message</code><span class="sig-paren">(</span><em>log_types</em>, <em>read_function</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.input_windows_messages.InputMessages.get_main_set_log_type_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.output_formater.input_windows_messages.InputMessages.get_primary_key_message">
+<em class="property">classmethod </em><code class="descname">get_primary_key_message</code><span class="sig-paren">(</span><em>parser</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.input_windows_messages.InputMessages.get_primary_key_message" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim.output_formater.log_reader_formater">
+<span id="whylog-vim-output-formater-log-reader-formater-module"></span><h2>whylog_vim.output_formater.log_reader_formater module<a class="headerlink" href="#module-whylog_vim.output_formater.log_reader_formater" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whylog_vim.output_formater.log_reader_formater.LogReaderOutput">
+<em class="property">class </em><code class="descclassname">whylog_vim.output_formater.log_reader_formater.</code><code class="descname">LogReaderOutput</code><a class="headerlink" href="#whylog_vim.output_formater.log_reader_formater.LogReaderOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="classmethod">
+<dt id="whylog_vim.output_formater.log_reader_formater.LogReaderOutput.format_investigation_result">
+<em class="property">classmethod </em><code class="descname">format_investigation_result</code><span class="sig-paren">(</span><em>output</em>, <em>investigation_result</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.log_reader_formater.LogReaderOutput.format_investigation_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="classmethod">
+<dt id="whylog_vim.output_formater.log_reader_formater.LogReaderOutput.format_query">
+<em class="property">classmethod </em><code class="descname">format_query</code><span class="sig-paren">(</span><em>front_input</em>, <em>query_output</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.log_reader_formater.LogReaderOutput.format_query" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim.output_formater.output_aggregator">
+<span id="whylog-vim-output-formater-output-aggregator-module"></span><h2>whylog_vim.output_formater.output_aggregator module<a class="headerlink" href="#module-whylog_vim.output_formater.output_aggregator" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whylog_vim.output_formater.output_aggregator.OutputAggregator">
+<em class="property">class </em><code class="descclassname">whylog_vim.output_formater.output_aggregator.</code><code class="descname">OutputAggregator</code><a class="headerlink" href="#whylog_vim.output_formater.output_aggregator.OutputAggregator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="whylog_vim.output_formater.output_aggregator.OutputAggregator.add">
+<code class="descname">add</code><span class="sig-paren">(</span><em>element</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.output_aggregator.OutputAggregator.add" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.output_formater.output_aggregator.OutputAggregator.add_commented">
+<code class="descname">add_commented</code><span class="sig-paren">(</span><em>content</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.output_aggregator.OutputAggregator.add_commented" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.output_formater.output_aggregator.OutputAggregator.call_button">
+<code class="descname">call_button</code><span class="sig-paren">(</span><em>line_number</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.output_aggregator.OutputAggregator.call_button" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.output_formater.output_aggregator.OutputAggregator.call_by_menu_function">
+<code class="descname">call_by_menu_function</code><span class="sig-paren">(</span><em>function_meta</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.output_aggregator.OutputAggregator.call_by_menu_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function calls specified by meta params function.
+function_meta is described in __init__ docstring.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.output_formater.output_aggregator.OutputAggregator.create_button">
+<code class="descname">create_button</code><span class="sig-paren">(</span><em>callback_function</em>, <em>function_meta</em>, <em>line=None</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.output_aggregator.OutputAggregator.create_button" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function create callback_function for the specified line.
+The function_meta param is the key for function_lines.
+By default function_meta should be touple of the
+(function_name, <a href="#id1"><span class="problematic" id="id2">*</span></a>params_identity)
+The meaning of the touple is described in __init__ docstring.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.output_formater.output_aggregator.OutputAggregator.get_content">
+<code class="descname">get_content</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.output_aggregator.OutputAggregator.get_content" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="whylog_vim.output_formater.output_aggregator.OutputAggregator.set_default_callback_function">
+<code class="descname">set_default_callback_function</code><span class="sig-paren">(</span><em>default_callback_function</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.output_aggregator.OutputAggregator.set_default_callback_function" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="whylog_vim.output_formater.output_aggregator.pass_function">
+<code class="descclassname">whylog_vim.output_formater.output_aggregator.</code><code class="descname">pass_function</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.output_aggregator.pass_function" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim.output_formater.utils">
+<span id="whylog-vim-output-formater-utils-module"></span><h2>whylog_vim.output_formater.utils module<a class="headerlink" href="#module-whylog_vim.output_formater.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="whylog_vim.output_formater.utils.convert_to_buttons">
+<code class="descclassname">whylog_vim.output_formater.utils.</code><code class="descname">convert_to_buttons</code><span class="sig-paren">(</span><em>elem_list</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.output_formater.utils.convert_to_buttons" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim.output_formater">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-whylog_vim.output_formater" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">whylog_vim.output_formater package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.output_formater.consts">whylog_vim.output_formater.consts module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.output_formater.input_windows_messages">whylog_vim.output_formater.input_windows_messages module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.output_formater.log_reader_formater">whylog_vim.output_formater.log_reader_formater module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.output_formater.output_aggregator">whylog_vim.output_formater.output_aggregator module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.output_formater.utils">whylog_vim.output_formater.utils module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.output_formater">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/whylog_vim.output_formater.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Ewa Pawłowska, Andrzej Górski, Krzysztof Gromadzki, Grzegorz Konefał.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.3</a>
+      
+      |
+      <a href="_sources/whylog_vim.output_formater.txt"
+          rel="nofollow">Page source</a></li>
+    </div>
+
+    
+
+    
+  </body>
+</html>

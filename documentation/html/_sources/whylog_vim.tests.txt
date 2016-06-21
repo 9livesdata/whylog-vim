@@ -1,0 +1,19 @@
+whylog_vim.tests package
+========================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    whylog_vim.tests.tests_input_reader
+    whylog_vim.tests.tests_output_formater
+    whylog_vim.tests.tests_proxy
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim.tests
+    :members:
+    :undoc-members:
+    :show-inheritance:

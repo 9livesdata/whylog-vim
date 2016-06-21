@@ -1,0 +1,711 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>whylog_vim package &mdash; Whylog-vim 1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Whylog-vim 1 documentation" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Whylog-vim 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="whylog-vim-package">
+<h1>whylog_vim package<a class="headerlink" href="#whylog-vim-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="whylog_vim.gui.html">whylog_vim.gui package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.gui.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.gui.html#module-whylog_vim.gui.exceptions">whylog_vim.gui.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.gui.html#module-whylog_vim.gui.files_manager">whylog_vim.gui.files_manager module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.gui.html#module-whylog_vim.gui.vim_ui_wrapper">whylog_vim.gui.vim_ui_wrapper module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.gui.html#module-whylog_vim.gui.windows">whylog_vim.gui.windows module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.gui.html#module-whylog_vim.gui">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="whylog_vim.input_reader.html">whylog_vim.input_reader package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.input_reader.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.input_reader.html#module-whylog_vim.input_reader.consts">whylog_vim.input_reader.consts module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.input_reader.html#module-whylog_vim.input_reader.teacher_reader">whylog_vim.input_reader.teacher_reader module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.input_reader.html#module-whylog_vim.input_reader">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="whylog_vim.output_formater.html">whylog_vim.output_formater package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.output_formater.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="whylog_vim.output_formater.teacher_formater.html">whylog_vim.output_formater.teacher_formater package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.output_formater.teacher_formater.html#module-whylog_vim.output_formater.teacher_formater">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.output_formater.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.output_formater.html#module-whylog_vim.output_formater.consts">whylog_vim.output_formater.consts module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.output_formater.html#module-whylog_vim.output_formater.input_windows_messages">whylog_vim.output_formater.input_windows_messages module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.output_formater.html#module-whylog_vim.output_formater.log_reader_formater">whylog_vim.output_formater.log_reader_formater module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.output_formater.html#module-whylog_vim.output_formater.output_aggregator">whylog_vim.output_formater.output_aggregator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.output_formater.html#module-whylog_vim.output_formater.utils">whylog_vim.output_formater.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.output_formater.html#module-whylog_vim.output_formater">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="whylog_vim.proxy.html">whylog_vim.proxy package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.proxy.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="whylog_vim.proxy.log_reader.html">whylog_vim.proxy.log_reader package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.proxy.log_reader.html#module-whylog_vim.proxy.log_reader">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="whylog_vim.proxy.teacher.html">whylog_vim.proxy.teacher package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.proxy.teacher.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.proxy.teacher.html#module-whylog_vim.proxy.teacher.exceptions">whylog_vim.proxy.teacher.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.proxy.teacher.html#module-whylog_vim.proxy.teacher.utils">whylog_vim.proxy.teacher.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.proxy.teacher.html#module-whylog_vim.proxy.teacher">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.proxy.html#module-whylog_vim.proxy">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="whylog_vim.tests.html">whylog_vim.tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.tests.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="whylog_vim.tests.tests_input_reader.html">whylog_vim.tests.tests_input_reader package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_input_reader.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_input_reader.html#whylog-vim-tests-tests-input-reader-tests-units-module">whylog_vim.tests.tests_input_reader.tests_units module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_input_reader.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="whylog_vim.tests.tests_output_formater.html">whylog_vim.tests.tests_output_formater package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_output_formater.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_output_formater.html#whylog-vim-tests-tests-output-formater-tests-output-agregator-module">whylog_vim.tests.tests_output_formater.tests_output_agregator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_output_formater.html#whylog-vim-tests-tests-output-formater-tests-utils-module">whylog_vim.tests.tests_output_formater.tests_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_output_formater.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="whylog_vim.tests.tests_proxy.html">whylog_vim.tests.tests_proxy package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_proxy.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_proxy.html#whylog-vim-tests-tests-proxy-tests-parser-menu-operations-module">whylog_vim.tests.tests_proxy.tests_parser_menu_operations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_proxy.html#whylog-vim-tests-tests-proxy-tests-unit-proxy-main-module">whylog_vim.tests.tests_proxy.tests_unit_proxy_main module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_proxy.html#whylog-vim-tests-tests-proxy-utils-module">whylog_vim.tests.tests_proxy.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whylog_vim.tests.tests_proxy.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="whylog_vim.tests.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-whylog_vim.consts">
+<span id="whylog-vim-consts-module"></span><h2>whylog_vim.consts module<a class="headerlink" href="#module-whylog_vim.consts" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="whylog_vim.consts.ActionTypes">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">ActionTypes</code><a class="headerlink" href="#whylog_vim.consts.ActionTypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.ActionTypes.STANDARD">
+<code class="descname">STANDARD</code><em class="property"> = 'standard action'</em><a class="headerlink" href="#whylog_vim.consts.ActionTypes.STANDARD" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ActionTypes.TEACHER">
+<code class="descname">TEACHER</code><em class="property"> = 'teacher action'</em><a class="headerlink" href="#whylog_vim.consts.ActionTypes.TEACHER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.Constraint">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">Constraint</code><a class="headerlink" href="#whylog_vim.consts.Constraint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.Constraint.ADD_BUTTON">
+<code class="descname">ADD_BUTTON</code><em class="property"> = 'add_constraint'</em><a class="headerlink" href="#whylog_vim.consts.Constraint.ADD_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Constraint.DELETE_BUTTON">
+<code class="descname">DELETE_BUTTON</code><em class="property"> = 'delete_constraint'</em><a class="headerlink" href="#whylog_vim.consts.Constraint.DELETE_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Constraint.GROUP">
+<code class="descname">GROUP</code><em class="property"> = 'line: %s, group: %s'</em><a class="headerlink" href="#whylog_vim.consts.Constraint.GROUP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Constraint.HEADER">
+<code class="descname">HEADER</code><em class="property"> = '=== Rule Constraints:'</em><a class="headerlink" href="#whylog_vim.consts.Constraint.HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Constraint.PARAM">
+<code class="descname">PARAM</code><em class="property"> = '%s: %s'</em><a class="headerlink" href="#whylog_vim.consts.Constraint.PARAM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Constraint.PARAMS_HEADER">
+<code class="descname">PARAMS_HEADER</code><em class="property"> = 'params:'</em><a class="headerlink" href="#whylog_vim.consts.Constraint.PARAMS_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Constraint.TYPE">
+<code class="descname">TYPE</code><em class="property"> = '--- Constraint: %s'</em><a class="headerlink" href="#whylog_vim.consts.Constraint.TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.ConstraintsOutputs">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">ConstraintsOutputs</code><a class="headerlink" href="#whylog_vim.consts.ConstraintsOutputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.ConstraintsOutputs.ADD_BUTTON">
+<code class="descname">ADD_BUTTON</code><em class="property"> = '[add_constraint]'</em><a class="headerlink" href="#whylog_vim.consts.ConstraintsOutputs.ADD_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ConstraintsOutputs.DELETE_BUTTON">
+<code class="descname">DELETE_BUTTON</code><em class="property"> = '[delete_constraint]'</em><a class="headerlink" href="#whylog_vim.consts.ConstraintsOutputs.DELETE_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ConstraintsOutputs.GROUP">
+<code class="descname">GROUP</code><em class="property"> = 'line: %s, group: %s'</em><a class="headerlink" href="#whylog_vim.consts.ConstraintsOutputs.GROUP" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ConstraintsOutputs.HEADER">
+<code class="descname">HEADER</code><em class="property"> = '=== Rule Constraints:'</em><a class="headerlink" href="#whylog_vim.consts.ConstraintsOutputs.HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ConstraintsOutputs.PARAM">
+<code class="descname">PARAM</code><em class="property"> = '%s: %s'</em><a class="headerlink" href="#whylog_vim.consts.ConstraintsOutputs.PARAM" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ConstraintsOutputs.PARAMS_HEADER">
+<code class="descname">PARAMS_HEADER</code><em class="property"> = 'params:'</em><a class="headerlink" href="#whylog_vim.consts.ConstraintsOutputs.PARAMS_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ConstraintsOutputs.TYPE">
+<code class="descname">TYPE</code><em class="property"> = '--- Constraint: %s'</em><a class="headerlink" href="#whylog_vim.consts.ConstraintsOutputs.TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.DefaultContent">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">DefaultContent</code><a class="headerlink" href="#whylog_vim.consts.DefaultContent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.DefaultContent.UNDEFINED">
+<code class="descname">UNDEFINED</code><em class="property"> = 'undefined'</em><a class="headerlink" href="#whylog_vim.consts.DefaultContent.UNDEFINED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.EditorStates">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">EditorStates</code><a class="headerlink" href="#whylog_vim.consts.EditorStates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.EditorStates.ADD_CAUSE">
+<code class="descname">ADD_CAUSE</code><em class="property"> = 'add cause'</em><a class="headerlink" href="#whylog_vim.consts.EditorStates.ADD_CAUSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.EditorStates.ASK_LOG_TYPE">
+<code class="descname">ASK_LOG_TYPE</code><em class="property"> = 'ask log type'</em><a class="headerlink" href="#whylog_vim.consts.EditorStates.ASK_LOG_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.EditorStates.EDITOR_NORMAL">
+<code class="descname">EDITOR_NORMAL</code><em class="property"> = 'editor normal'</em><a class="headerlink" href="#whylog_vim.consts.EditorStates.EDITOR_NORMAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.EditorStates.EFFECT_ADDED">
+<code class="descname">EFFECT_ADDED</code><em class="property"> = 'added effect'</em><a class="headerlink" href="#whylog_vim.consts.EditorStates.EFFECT_ADDED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.EditorStates.LOG_READER">
+<code class="descname">LOG_READER</code><em class="property"> = 'query'</em><a class="headerlink" href="#whylog_vim.consts.EditorStates.LOG_READER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.EditorStates.TEACHER">
+<code class="descname">TEACHER</code><em class="property"> = 'teacher menu'</em><a class="headerlink" href="#whylog_vim.consts.EditorStates.TEACHER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.EditorStates.TEACHER_INPUT">
+<code class="descname">TEACHER_INPUT</code><em class="property"> = 'input window'</em><a class="headerlink" href="#whylog_vim.consts.EditorStates.TEACHER_INPUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.FunctionNames">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">FunctionNames</code><a class="headerlink" href="#whylog_vim.consts.FunctionNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.FunctionNames.ADD_CONSTRAINT">
+<code class="descname">ADD_CONSTRAINT</code><em class="property"> = 'add constraint'</em><a class="headerlink" href="#whylog_vim.consts.FunctionNames.ADD_CONSTRAINT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.FunctionNames.COPY_PARSER">
+<code class="descname">COPY_PARSER</code><em class="property"> = 'copy paser'</em><a class="headerlink" href="#whylog_vim.consts.FunctionNames.COPY_PARSER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.FunctionNames.DELETE_CONSTRAINT">
+<code class="descname">DELETE_CONSTRAINT</code><em class="property"> = 'delete constraint'</em><a class="headerlink" href="#whylog_vim.consts.FunctionNames.DELETE_CONSTRAINT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.FunctionNames.DELETE_PARSER">
+<code class="descname">DELETE_PARSER</code><em class="property"> = 'delete paser'</em><a class="headerlink" href="#whylog_vim.consts.FunctionNames.DELETE_PARSER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.FunctionNames.EDIT_CONSTRAINT">
+<code class="descname">EDIT_CONSTRAINT</code><em class="property"> = 'edit constraint'</em><a class="headerlink" href="#whylog_vim.consts.FunctionNames.EDIT_CONSTRAINT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.FunctionNames.EDIT_LINE_CONTENT">
+<code class="descname">EDIT_LINE_CONTENT</code><em class="property"> = 'edit line content'</em><a class="headerlink" href="#whylog_vim.consts.FunctionNames.EDIT_LINE_CONTENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.FunctionNames.EDIT_LOG_TYPE">
+<code class="descname">EDIT_LOG_TYPE</code><em class="property"> = 'edit log type'</em><a class="headerlink" href="#whylog_vim.consts.FunctionNames.EDIT_LOG_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.FunctionNames.EDIT_PRIMARY_KEY_GROUPS">
+<code class="descname">EDIT_PRIMARY_KEY_GROUPS</code><em class="property"> = 'edit primary key groups'</em><a class="headerlink" href="#whylog_vim.consts.FunctionNames.EDIT_PRIMARY_KEY_GROUPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.FunctionNames.EDIT_REGEX">
+<code class="descname">EDIT_REGEX</code><em class="property"> = 'edit regex'</em><a class="headerlink" href="#whylog_vim.consts.FunctionNames.EDIT_REGEX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.FunctionNames.GUESS_REGEX">
+<code class="descname">GUESS_REGEX</code><em class="property"> = 'guess regex'</em><a class="headerlink" href="#whylog_vim.consts.FunctionNames.GUESS_REGEX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.FunctionNames.READ_LOG_TYPE">
+<code class="descname">READ_LOG_TYPE</code><em class="property"> = 'read log type'</em><a class="headerlink" href="#whylog_vim.consts.FunctionNames.READ_LOG_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.LineNames">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">LineNames</code><a class="headerlink" href="#whylog_vim.consts.LineNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.LineNames.CAUSE">
+<code class="descname">CAUSE</code><em class="property"> = 'cause_%s'</em><a class="headerlink" href="#whylog_vim.consts.LineNames.CAUSE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.LineNames.CAUSE_PREFIX">
+<code class="descname">CAUSE_PREFIX</code><em class="property"> = 6</em><a class="headerlink" href="#whylog_vim.consts.LineNames.CAUSE_PREFIX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.LineNames.EFFECT">
+<code class="descname">EFFECT</code><em class="property"> = 'effect'</em><a class="headerlink" href="#whylog_vim.consts.LineNames.EFFECT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.LogType">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">LogType</code><a class="headerlink" href="#whylog_vim.consts.LogType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.LogType.ADD_BUTTON">
+<code class="descname">ADD_BUTTON</code><em class="property"> = 'add_log_type'</em><a class="headerlink" href="#whylog_vim.consts.LogType.ADD_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.LogType.CANCEL_BUTTON">
+<code class="descname">CANCEL_BUTTON</code><em class="property"> = 'cancel'</em><a class="headerlink" href="#whylog_vim.consts.LogType.CANCEL_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.LogType.FILE_NAME_MATCHER">
+<code class="descname">FILE_NAME_MATCHER</code><em class="property"> = 'file name matcher: %s'</em><a class="headerlink" href="#whylog_vim.consts.LogType.FILE_NAME_MATCHER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.LogType.HOST_PATTERN">
+<code class="descname">HOST_PATTERN</code><em class="property"> = 'host pattern: %s'</em><a class="headerlink" href="#whylog_vim.consts.LogType.HOST_PATTERN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.LogType.NAME">
+<code class="descname">NAME</code><em class="property"> = '--- log type name: %s'</em><a class="headerlink" href="#whylog_vim.consts.LogType.NAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.LogType.PATH_PATTERN">
+<code class="descname">PATH_PATTERN</code><em class="property"> = ' path pattern: %s'</em><a class="headerlink" href="#whylog_vim.consts.LogType.PATH_PATTERN" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.LogType.SUPER_PARSER">
+<code class="descname">SUPER_PARSER</code><em class="property"> = ' super parser regex: %s'</em><a class="headerlink" href="#whylog_vim.consts.LogType.SUPER_PARSER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.Messages">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">Messages</code><a class="headerlink" href="#whylog_vim.consts.Messages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.ADDED_EFFECT">
+<code class="descname">ADDED_EFFECT</code><em class="property"> = '### WHYLOG ### You added line as effect. Select cause and press &lt;F4&gt;.'</em><a class="headerlink" href="#whylog_vim.consts.Messages.ADDED_EFFECT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.CASE_INFO">
+<code class="descname">CASE_INFO</code><em class="property"> = 'Select an option and press &lt;F3&gt;'</em><a class="headerlink" href="#whylog_vim.consts.Messages.CASE_INFO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.COMMENT_PREFIX">
+<code class="descname">COMMENT_PREFIX</code><em class="property"> = '# %s'</em><a class="headerlink" href="#whylog_vim.consts.Messages.COMMENT_PREFIX" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.CONTENT_OF_LINE">
+<code class="descname">CONTENT_OF_LINE</code><em class="property"> = 'This is the content of the line:'</em><a class="headerlink" href="#whylog_vim.consts.Messages.CONTENT_OF_LINE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.CONVERTER">
+<code class="descname">CONVERTER</code><em class="property"> = 'This is the match of the group: %s'</em><a class="headerlink" href="#whylog_vim.consts.Messages.CONVERTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.ENDING">
+<code class="descname">ENDING</code><em class="property"> = 'Do not change the commented text above.'</em><a class="headerlink" href="#whylog_vim.consts.Messages.ENDING" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.INPUT_HEADER">
+<code class="descname">INPUT_HEADER</code><em class="property"> = 'This is whylog input window.'</em><a class="headerlink" href="#whylog_vim.consts.Messages.INPUT_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.INPUT_INFO">
+<code class="descname">INPUT_INFO</code><em class="property"> = 'Enter the content below the commented block and press &lt;F3&gt;.'</em><a class="headerlink" href="#whylog_vim.consts.Messages.INPUT_INFO" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.LOGTYPE">
+<code class="descname">LOGTYPE</code><em class="property"> = 'This is the content and path of the line:'</em><a class="headerlink" href="#whylog_vim.consts.Messages.LOGTYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.PRIMARY_KEY">
+<code class="descname">PRIMARY_KEY</code><em class="property"> = 'This is the content and path of the line:'</em><a class="headerlink" href="#whylog_vim.consts.Messages.PRIMARY_KEY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.SELECT_LOG_TYPE">
+<code class="descname">SELECT_LOG_TYPE</code><em class="property"> = 'Whylog cannot recognize the log type of this file.'</em><a class="headerlink" href="#whylog_vim.consts.Messages.SELECT_LOG_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.Messages.TEACHER_HEADER">
+<code class="descname">TEACHER_HEADER</code><em class="property"> = 'You are using whylog teacher.'</em><a class="headerlink" href="#whylog_vim.consts.Messages.TEACHER_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.ParserOutputs">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">ParserOutputs</code><a class="headerlink" href="#whylog_vim.consts.ParserOutputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.ParserOutputs.COPY_BUTTON">
+<code class="descname">COPY_BUTTON</code><em class="property"> = '[copy_line]'</em><a class="headerlink" href="#whylog_vim.consts.ParserOutputs.COPY_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ParserOutputs.DELETE_BUTTON">
+<code class="descname">DELETE_BUTTON</code><em class="property"> = '[delete_line]'</em><a class="headerlink" href="#whylog_vim.consts.ParserOutputs.DELETE_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ParserOutputs.GROUP_CONVERTER">
+<code class="descname">GROUP_CONVERTER</code><em class="property"> = 'group %s: %s, match: %s'</em><a class="headerlink" href="#whylog_vim.consts.ParserOutputs.GROUP_CONVERTER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ParserOutputs.GUESS_BUTTON">
+<code class="descname">GUESS_BUTTON</code><em class="property"> = '[guess_regex]'</em><a class="headerlink" href="#whylog_vim.consts.ParserOutputs.GUESS_BUTTON" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ParserOutputs.LINE_CONTENT">
+<code class="descname">LINE_CONTENT</code><em class="property"> = '--- Line %s: %s'</em><a class="headerlink" href="#whylog_vim.consts.ParserOutputs.LINE_CONTENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ParserOutputs.LOG_TYPE">
+<code class="descname">LOG_TYPE</code><em class="property"> = 'log type: %s'</em><a class="headerlink" href="#whylog_vim.consts.ParserOutputs.LOG_TYPE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ParserOutputs.MESSAGE_CONTENT">
+<code class="descname">MESSAGE_CONTENT</code><em class="property"> = '=== %s: %s'</em><a class="headerlink" href="#whylog_vim.consts.ParserOutputs.MESSAGE_CONTENT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ParserOutputs.META">
+<code class="descname">META</code><em class="property"> = 'file: %s, offset: %s'</em><a class="headerlink" href="#whylog_vim.consts.ParserOutputs.META" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ParserOutputs.OTHERS_HEADER">
+<code class="descname">OTHERS_HEADER</code><em class="property"> = '--- Other:'</em><a class="headerlink" href="#whylog_vim.consts.ParserOutputs.OTHERS_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ParserOutputs.PRIMARY_KEY">
+<code class="descname">PRIMARY_KEY</code><em class="property"> = 'primary key groups: %s'</em><a class="headerlink" href="#whylog_vim.consts.ParserOutputs.PRIMARY_KEY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.ParserOutputs.REGEX_HEADER">
+<code class="descname">REGEX_HEADER</code><em class="property"> = '--- Regex: %s'</em><a class="headerlink" href="#whylog_vim.consts.ParserOutputs.REGEX_HEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.ReadMessages">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">ReadMessages</code><a class="headerlink" href="#whylog_vim.consts.ReadMessages" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.ReadMessages.TOO_MANY_LINES">
+<code class="descname">TOO_MANY_LINES</code><em class="property"> = '! Error ! You can put only single line as content of parser.'</em><a class="headerlink" href="#whylog_vim.consts.ReadMessages.TOO_MANY_LINES" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.Templates">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">Templates</code><a class="headerlink" href="#whylog_vim.consts.Templates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.Templates.READ_ERROR">
+<code class="descname">READ_ERROR</code><em class="property"> = '! Error ! %s'</em><a class="headerlink" href="#whylog_vim.consts.Templates.READ_ERROR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.WindowSizes">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">WindowSizes</code><a class="headerlink" href="#whylog_vim.consts.WindowSizes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.WindowSizes.QUERY_WINDOW">
+<code class="descname">QUERY_WINDOW</code><em class="property"> = 10</em><a class="headerlink" href="#whylog_vim.consts.WindowSizes.QUERY_WINDOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="whylog_vim.consts.WindowTypes">
+<em class="property">class </em><code class="descclassname">whylog_vim.consts.</code><code class="descname">WindowTypes</code><a class="headerlink" href="#whylog_vim.consts.WindowTypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<dl class="attribute">
+<dt id="whylog_vim.consts.WindowTypes.CASE">
+<code class="descname">CASE</code><em class="property"> = 'whylog_case'</em><a class="headerlink" href="#whylog_vim.consts.WindowTypes.CASE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.WindowTypes.INPUT">
+<code class="descname">INPUT</code><em class="property"> = 'whylog_input'</em><a class="headerlink" href="#whylog_vim.consts.WindowTypes.INPUT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.WindowTypes.MESSAGE">
+<code class="descname">MESSAGE</code><em class="property"> = 'whylog_message'</em><a class="headerlink" href="#whylog_vim.consts.WindowTypes.MESSAGE" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.WindowTypes.QUERY">
+<code class="descname">QUERY</code><em class="property"> = 'whylog_query_output'</em><a class="headerlink" href="#whylog_vim.consts.WindowTypes.QUERY" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="whylog_vim.consts.WindowTypes.TEACHER">
+<code class="descname">TEACHER</code><em class="property"> = 'whylog_teacher'</em><a class="headerlink" href="#whylog_vim.consts.WindowTypes.TEACHER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim.exceptions">
+<span id="whylog-vim-exceptions-module"></span><h2>whylog_vim.exceptions module<a class="headerlink" href="#module-whylog_vim.exceptions" title="Permalink to this headline">¶</a></h2>
+<dl class="exception">
+<dt id="whylog_vim.exceptions.UnknownAction">
+<em class="property">exception </em><code class="descclassname">whylog_vim.exceptions.</code><code class="descname">UnknownAction</code><span class="sig-paren">(</span><em>action_type</em>, <em>state</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.exceptions.UnknownAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#whylog_vim.exceptions.WhylogVimException" title="whylog_vim.exceptions.WhylogVimException"><code class="xref py py-class docutils literal"><span class="pre">whylog_vim.exceptions.WhylogVimException</span></code></a></p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="whylog_vim.exceptions.WhylogVimException">
+<em class="property">exception </em><code class="descclassname">whylog_vim.exceptions.</code><code class="descname">WhylogVimException</code><a class="headerlink" href="#whylog_vim.exceptions.WhylogVimException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">exceptions.Exception</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim.utils">
+<span id="whylog-vim-utils-module"></span><h2>whylog_vim.utils module<a class="headerlink" href="#module-whylog_vim.utils" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="whylog_vim.utils.get_id_from_name">
+<code class="descclassname">whylog_vim.utils.</code><code class="descname">get_id_from_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.utils.get_id_from_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="whylog_vim.utils.get_parser_name">
+<code class="descclassname">whylog_vim.utils.</code><code class="descname">get_parser_name</code><span class="sig-paren">(</span><em>parser_id</em><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.utils.get_parser_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-whylog_vim">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-whylog_vim" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="whylog_vim.whylog_action">
+<code class="descclassname">whylog_vim.</code><code class="descname">whylog_action</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.whylog_action" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="whylog_vim.whylog_teach">
+<code class="descclassname">whylog_vim.</code><code class="descname">whylog_teach</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#whylog_vim.whylog_teach" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">whylog_vim package</a><ul>
+<li><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.consts">whylog_vim.consts module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.exceptions">whylog_vim.exceptions module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim.utils">whylog_vim.utils module</a></li>
+<li><a class="reference internal" href="#module-whylog_vim">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/whylog_vim.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Ewa Pawłowska, Andrzej Górski, Krzysztof Gromadzki, Grzegorz Konefał.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.3</a>
+      
+      |
+      <a href="_sources/whylog_vim.txt"
+          rel="nofollow">Page source</a></li>
+    </div>
+
+    
+
+    
+  </body>
+</html>

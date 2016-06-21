@@ -1,0 +1,18 @@
+whylog_vim.proxy package
+========================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    whylog_vim.proxy.log_reader
+    whylog_vim.proxy.teacher
+
+Module contents
+---------------
+
+.. automodule:: whylog_vim.proxy
+    :members:
+    :undoc-members:
+    :show-inheritance:
