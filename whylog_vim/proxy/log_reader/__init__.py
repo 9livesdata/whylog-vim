@@ -20,9 +20,9 @@ class LogReaderProxy(object):
         front_input = self.editor.get_front_input()
         query_output = self.log_reader.get_causes(
             front_input, {
-                self.editor.log_type: [front_input.line_source]
+                self.main_proxy.log_types[front_input.line_source]: [front_input.line_source]
             })  # yapf: disable
-        self.output = LogReaderOutput.format_query(front_input, query_output)
+        self.output = self.output_formater.format_query(front_input, query_output)
         self.output.set_default_callback_function(self.editor.close_query_window)
         self.editor.create_query_window(self.output.get_content())
         self.editor.go_to_query_window()

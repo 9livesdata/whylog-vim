@@ -58,6 +58,8 @@ class WhylogProxy(object):
         config get_log_type. If it isn't possible it creates new windows,
         which asks user for the logtype.
         """
+        if self.editor.is_any_whylog_window_open():
+            return True
         line_source = self.editor.get_line_source()
         if self.log_types.get(line_source):
             return True
@@ -101,7 +103,6 @@ class WhylogProxy(object):
         whylog_action button which is set by default on <F3>.
         """
         self._handle_action(ActionTypes.STANDARD)
-
 
     def teach(self):
         """
