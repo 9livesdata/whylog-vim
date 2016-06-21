@@ -36,7 +36,6 @@ class LogReaderOutput(object):
         if not query_output:
             output.add('')
             output.add_commented(LogReader.EMPTY_OUTPUT)
-            output.add_commented(LogReader.EMPTY_OUTPUT_CONTINUE)
             return output
 
         if len(query_output) == 1:
